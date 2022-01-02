@@ -390,6 +390,131 @@
         </tr>
     </table>
 
+
+    </br></br>
+    <div class="content-title">Baselines</div>
+    <table border="0" class="inlineTable">
+        <tr>
+            <th>Emotion</th>
+            <th>Source</th>
+            <th>Ours</th>
+            <th>Seq2seq-EVC</th>
+            <th>VAW-GAN</th>
+            <th>Tacotron2 + Emotion</th>
+        </tr>
+        <tr>
+            <td>Neutral-Angry</td>
+            <td>
+                <div id="baselines_angry_src"></div>
+                <button id="baselines_angry_src__header" class="play-button-demo btn btn-primary" onclick="x1_a.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x1_a = WaveSurfer.create({ container: '#baselines_angry_src', waveColor: 'violet', progressColor: 'purple' }); x1_a.load('./audio/baselines/angry/src.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_angry_ours"></div>
+                <button id="baselines_angry_ours__header" class="play-button-demo btn btn-primary" onclick="x1_b.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x1_b = WaveSurfer.create({ container: '#baselines_angry_ours', waveColor: 'violet', progressColor: 'purple' }); x1_b.load('./audio/baselines/angry/ours.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_angry_s2s"></div>
+                <button id="baselines_angry_s2s__header" class="play-button-demo btn btn-primary" onclick="x1_c.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x1_c = WaveSurfer.create({ container: '#baselines_angry_s2s', waveColor: 'violet', progressColor: 'purple' }); x1_c.load('./audio/baselines/angry/s2s.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_angry_vaw"></div>
+                <button id="baselines_angry_vaw__header" class="play-button-demo btn btn-primary" onclick="x1_d.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x1_d = WaveSurfer.create({ container: '#baselines_angry_vaw', waveColor: 'violet', progressColor: 'purple' }); x1_d.load('./audio/baselines/angry/vaw.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_angry_taco"></div>
+                <button id="baselines_angry_taco__header" class="play-button-demo btn btn-primary" onclick="x1_e.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x1_e = WaveSurfer.create({ container: '#baselines_angry_taco', waveColor: 'violet', progressColor: 'purple' }); x1_e.load('./audio/baselines/angry/taco.wav'); </script>
+           </td>
+        </tr>
+        <tr>
+            <td>Neutral-Sleepy</td>
+            <td>
+                <div id="baselines_sleepy_src"></div>
+                <button id="baselines_sleepy_src__header" class="play-button-demo btn btn-primary" onclick="x2_a.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x2_a = WaveSurfer.create({ container: '#baselines_sleepy_src', waveColor: 'violet', progressColor: 'purple' }); x2_a.load('./audio/baselines/sleepy/src.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_sleepy_ours"></div>
+                <button id="baselines_sleepy_ours__header" class="play-button-demo btn btn-primary" onclick="x2_b.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x2_b = WaveSurfer.create({ container: '#baselines_sleepy_ours', waveColor: 'violet', progressColor: 'purple' }); x2_b.load('./audio/baselines/sleepy/ours.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_sleepy_s2s"></div>
+                <button id="baselines_sleepy_s2s__header" class="play-button-demo btn btn-primary" onclick="x2_c.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x2_c = WaveSurfer.create({ container: '#baselines_sleepy_s2s', waveColor: 'violet', progressColor: 'purple' }); x2_c.load('./audio/baselines/sleepy/s2s.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_sleepy_vaw"></div>
+                <button id="baselines_sleepy_vaw__header" class="play-button-demo btn btn-primary" onclick="x2_d.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x2_d = WaveSurfer.create({ container: '#baselines_sleepy_vaw', waveColor: 'violet', progressColor: 'purple' }); x2_d.load('./audio/baselines/sleepy/vaw.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_sleepy_taco"></div>
+                <button id="baselines_sleepy_taco__header" class="play-button-demo btn btn-primary" onclick="x2_e.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x2_e = WaveSurfer.create({ container: '#baselines_sleepy_taco', waveColor: 'violet', progressColor: 'purple' }); x2_e.load('./audio/baselines/sleepy/taco.wav'); </script>
+           </td>
+        </tr>
+        <tr>
+            <td>Neutral-Amused</td>
+            <td>
+                <div id="baselines_amused_src"></div>
+                <button id="baselines_amused_src__header" class="play-button-demo btn btn-primary" onclick="x3_a.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x3_a = WaveSurfer.create({ container: '#baselines_amused_src', waveColor: 'violet', progressColor: 'purple' }); x3_a.load('./audio/baselines/amused/src.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_amused_ours"></div>
+                <button id="baselines_amused_ours__header" class="play-button-demo btn btn-primary" onclick="x3_b.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x3_b = WaveSurfer.create({ container: '#baselines_amused_ours', waveColor: 'violet', progressColor: 'purple' }); x3_b.load('./audio/baselines/amused/ours.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_amused_s2s"></div>
+                <button id="baselines_amused_s2s__header" class="play-button-demo btn btn-primary" onclick="x3_c.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x3_c = WaveSurfer.create({ container: '#baselines_amused_s2s', waveColor: 'violet', progressColor: 'purple' }); x3_c.load('./audio/baselines/amused/s2s.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_amused_vaw"></div>
+                <button id="baselines_amused_vaw__header" class="play-button-demo btn btn-primary" onclick="x3_d.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x3_d = WaveSurfer.create({ container: '#baselines_amused_vaw', waveColor: 'violet', progressColor: 'purple' }); x3_d.load('./audio/baselines/amused/vaw.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_amused_taco"></div>
+                <button id="baselines_amused_taco__header" class="play-button-demo btn btn-primary" onclick="x3_e.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x3_e = WaveSurfer.create({ container: '#baselines_amused_taco', waveColor: 'violet', progressColor: 'purple' }); x3_e.load('./audio/baselines/amused/taco.wav'); </script>
+           </td>
+        </tr>
+        <tr>
+            <td>Neutral-Disgusted</td>
+            <td>
+                <div id="baselines_disgusted_src"></div>
+                <button id="baselines_disgusted_src__header" class="play-button-demo btn btn-primary" onclick="x4_a.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x4_a = WaveSurfer.create({ container: '#baselines_disgusted_src', waveColor: 'violet', progressColor: 'purple' }); x4_a.load('./audio/baselines/disgusted/src.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_disgusted_ours"></div>
+                <button id="baselines_disgusted_ours__header" class="play-button-demo btn btn-primary" onclick="x4_b.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x4_b = WaveSurfer.create({ container: '#baselines_disgusted_ours', waveColor: 'violet', progressColor: 'purple' }); x4_b.load('./audio/baselines/disgusted/ours.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_disgusted_s2s"></div>
+                <button id="baselines_disgusted_s2s__header" class="play-button-demo btn btn-primary" onclick="x4_c.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x4_c = WaveSurfer.create({ container: '#baselines_disgusted_s2s', waveColor: 'violet', progressColor: 'purple' }); x4_c.load('./audio/baselines/disgusted/s2s.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_disgusted_vaw"></div>
+                <button id="baselines_disgusted_vaw__header" class="play-button-demo btn btn-primary" onclick="x4_d.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x4_d = WaveSurfer.create({ container: '#baselines_disgusted_vaw', waveColor: 'violet', progressColor: 'purple' }); x4_d.load('./audio/baselines/disgusted/vaw.wav'); </script>
+           </td>
+            <td>
+                <div id="baselines_disgusted_taco"></div>
+                <button id="baselines_disgusted_taco__header" class="play-button-demo btn btn-primary" onclick="x4_e.playPause()"> <i class="fa fa-play"></i> Play / <i class="fa fa-pause"></i> Pause </button>
+                <script> var x4_e = WaveSurfer.create({ container: '#baselines_disgusted_taco', waveColor: 'violet', progressColor: 'purple' }); x4_e.load('./audio/baselines/disgusted/taco.wav'); </script>
+           </td>
+        </tr>
+    </table>
 </div>
 
 <div class="content-container">
