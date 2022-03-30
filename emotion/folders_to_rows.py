@@ -10,14 +10,14 @@ template = """
         {var}.load('{wav_path}'); </script>
 </td>
 """
-root = Path("./audio/same_sentence/female")
+root = Path("./audio/same_sentence/male")
 
 wavs = root.glob("*.wav")
 out = ""
 
 for wav in wavs:
-    uid = uuid.uuid4().hex.upper()[0:6]
-    button_uid = uuid.uuid4().hex.upper()[0:6]
-    var_uid = uuid.uuid4().hex.upper()[0:6]
+    uid = "X" + uuid.uuid4().hex.upper()[0:6]
+    button_uid = "X" + uuid.uuid4().hex.upper()[0:6]
+    var_uid = "X" + uuid.uuid4().hex.upper()[0:6]
     out += template.format(id=uid, var=var_uid, button_id=button_uid, wav_path=str(wav)) + "\n"
 print(out)
