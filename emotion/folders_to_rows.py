@@ -10,7 +10,7 @@ template = """
         {var}.load('{wav_path}'); </script>
 </td>
 """
-root = Path("./audio/same_sentence/male")
+root = Path("./audio/same_sentence/female_1")
 
 wavs = root.glob("*.wav")
 out = ""
